@@ -5,15 +5,20 @@ owl.owlCarousel({
   center: true,
   loop: true,
   margin: 30,
-  startPosition: 1,
-  items: 3,
+  startPosition: 0,
+  items: 1,
   smartSpeed: 500,
 
   responsive: {
-    // breakpoint from 0 up
-    // 0: {},
-    // breakpoint from 850 up
+    // 450: {
+    //   items: 3,
+    // },
+    465: {
+      startPosition: 1,
+      items: 3,
+    },
     850: {
+      startPosition: 1,
       items: 3,
     },
     // breakpoint from 1000 up
@@ -24,6 +29,7 @@ owl.owlCarousel({
     // breakpoint from 1200 up
     1200: {
       margin: 30,
+      items: 3,
     },
   },
 });
